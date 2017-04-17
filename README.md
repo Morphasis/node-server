@@ -6,7 +6,8 @@ Installation:
 
 Install Node
 
-Run NPM install
+Run npm install
 
 Run node index.js
 
+In browser go to http://localhost:8888/
