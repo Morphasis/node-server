@@ -6,7 +6,7 @@ Installation:
 
 Install Node
 
-Run NPM install
+Run npm install
 
 Run node index.js
 
