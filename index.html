@@ -1,6 +1,28 @@
-<!-- Link css -->
+<!-- JQUERY AND HANDLEBAR ARE REQUIRED HERE -->
+<script src="./jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="./handlebars-v4.0.5.js" type="text/javascript"></script>
+
+<!-- CSS FOR SOME REASON I ADDED -->
 <link rel="stylesheet" href="./main.css">
 
-<h1>hello world</h1>
+<h1>Handlebars JS Example</h1>
+<script id="some-template" type="text/x-handlebars-template"> <table>
+    <thead>
+        <th>Name</th>
+        <th>Job Title</th>
+        <th>Twitter</th>
+    </thead>
+    <tbody>
+        {{#users}}
+        <tr>
+            <td>{{fullName person}}</td>
+            <td>{{jobTitle}}</td>
+            <td><a href="https://twitter.com/{{twitter}}">@{{twitter}}</a></td>
+        </tr>
+        {{/users}}
+    </tbody>
+</table>
+</script>
 
-<!-- Made by Jack Sharville :) -->
+<!-- This is the handlebar code for the variable replacement it must be after because it needs to already have the content in the dom like most jquery stuff. -->
+<script src="./demo.js" type="text/javascript"></script>
